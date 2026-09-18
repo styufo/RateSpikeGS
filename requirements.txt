@@ -1,0 +1,13 @@
+# Install the CUDA-compatible PyTorch wheels first; see README.md.
+nerfstudio==1.0.3
+gsplat==0.1.11
+numpy==1.26.4
+tyro==0.8.14
+viser==0.1.26
+jaxtyping==0.2.34
+pypose==0.6.8
+opencv-python==4.8.0.76
+torchmetrics==1.8.2
+torch-fidelity==0.4.0
+skipgs @ git+https://github.com/ASU-ESIC-FAN-Lab/SkipGS.git@0d595f225eb99bd279ae074dd662e01a5ad0fae8
+pytest>=7,<9
