@@ -21,19 +21,13 @@ pip install -r requirements.txt
 pip install --no-deps -e .
 ```
 
-The tiny-cuda-nn installation follows the upstream USP-Gaussian instructions;
-it belongs to the inherited Nerfstudio environment rather than the Gaussian
-representation itself. The release is tested in the existing research environment,
-not yet in a newly provisioned environment from these commands.
+The tiny-cuda-nn installation follows the upstream USP-Gaussian instructions.
 
 ## Data
 
 Obtain the synthetic dataset through the
 [USP-Gaussian repository](https://github.com/chenkang455/USP-Gaussian) and keep its
-directory layout and camera metadata intact. Each scene includes `transforms.json`,
-the point cloud referenced by the metadata, `spike_data`, and `sharp_data`.
-The four scenes are Wine, Tanabata, Factory, and Outdoorpool.
-Dataset licensing and access remain with the original providers.
+directory layout and camera metadata intact. 
 
 ## Training
 
