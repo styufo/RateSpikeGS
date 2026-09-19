@@ -4,9 +4,7 @@
 
 ## Installation
 
-The development environment uses Linux, Python 3.9, PyTorch 2.1.2, CUDA 11.8,
-Nerfstudio 1.0.3, gsplat 0.1.11, and NVIDIA V100 GPUs. A CUDA toolkit and a
-compatible C++ compiler are needed to build extensions. Other GPU architectures
+The development environment uses NVIDIA V100 GPUs. Other GPU architectures
 require compatible CUDA extension builds.
 
 ```bash
