@@ -44,18 +44,6 @@ CUDA_VISIBLE_DEVICES=0 python render.py \
     --output renders/factory --indices 26 27
 ```
 
-Omit `--indices` to evaluate the complete configured split. Each view contains
-`gs.png`, `recon.png`, `input.png`, and `gt.png`; `metrics.json` contains per-view
-and mean metrics. `--data` and `--checkpoint-dir` relocate downloaded experiments.
-Only load configurations and checkpoints from trusted sources.
-
-The synthetic preset uses **all views for training and evaluation**, matching
-the reconstruction protocol used in these experiments. This is not a held-out
-novel-view benchmark. GS and Recon-Net predictions both use the inherited fixed
-`clamp(2 * prediction, 0, 1)` exposure convention, not per-image tone matching.
-`rgb_*` metrics refer to GS renders; `spike_*` metrics refer to Recon-Net outputs.
-
-
 ## Tests
 
 ```bash
